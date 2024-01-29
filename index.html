@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <title>Tomoki Nishi's Portfolio</title>
 </head>
 <body>
@@ -11,16 +12,19 @@
         <div class="logo">T/N</div>
         <nav>
             <a href="#skills">Skills</a>
+            <a href="#posts">Posts</a>
+            <a href="#links">Links</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
     <div class="hero">
+        <div id="particles-js"></div> <!-- Particles.js container -->
         <h1>Tomoki Nishi</h1>
         <p>NewWork Engineer</p>
         <p>Monitoring and maintenance operators who monitor the network and respond to any problems that occur.</p>
     </div>
     <div class="skills-section">
-        <h1 class="skills-heading">My Skills</h1> <!-- スキルセクションの見出しを追加 -->
+        <h2 class="skills-heading">My Skills</h2>
         <div class="skills" id="skills">
             <div class="card">
                 <h3>Network</h3>
@@ -36,8 +40,36 @@
                 <h3>Coding</h3>
                 <p>Learning HTML,CSS,JavaScript</p>
                 <p>Learning Python</p>
+                <p>Learning Java</p>
+                <p>VBA</p>
+                
             </div>
+            <!-- Add more cards here -->
         </div>
     </div>
+    <div class="posts-section" id="posts">
+        <h2 class="posts-heading">Posts</h2>
+        <!-- Posts content will go here -->
+    </div>
+    <div class="links-section" id="links">
+        <h2 class="links-heading">Links</h2>
+        <!-- Links content will go here -->
+    </div>
+
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                // その他のパーティクル設定...
+            },
+            // 追加の設定...
+        });
+    </script>
 </body>
 </html>
